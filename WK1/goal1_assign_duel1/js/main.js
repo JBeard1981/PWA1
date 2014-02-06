@@ -45,7 +45,10 @@
                 round++;
                 alert(playerOneName+": "+playerOneHealth+"  *ROUND "+round+" OVER"+"*  "+playerTwoName+": "+playerTwoHealth);
 
-            } else{
+            } else if (round<10){
+                alert(result);
+                break;
+            }else{
                 alert(result);
                 break;
             };
