@@ -1,4 +1,4 @@
-/* Created by Jonathan Beard on 2/6/14. */
+/* Created by Jonathan Beard on 2/6/14. Goal1: Assignment: The Duel - Part I*/
 
 
 // self-executing function
