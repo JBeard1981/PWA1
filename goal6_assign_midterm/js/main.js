@@ -12,7 +12,7 @@
     
         
     for (var i=0; i < stu.length; i++)
-    console.log("Name: "+stu[i].name, + "\nAddress: "+stu[i].address.street, "\nCity: "+stu[i].address.city, "\nState: "+stu[i].address.state, +"\nGPA: "+stu[i].grades);
+    console.log("Name: "+stu[i].name, "\nAddress: "  + stu[i].address.street, "\nCity: "+stu[i].address.city, "\nState: "+stu[i].address.state, "\nGPA: "+stu[i].grades);
 
         start.onclick = function(e) { 
         e.preventDefault();
