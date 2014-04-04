@@ -9,20 +9,20 @@
         var start = document.querySelector("#info_btn a");
         var stu = [{name:'Steve Rogers', address:{street:'3300 University Blvd', city:'Winter Park', state:'Fl'},grades:[2.5,3.0,4.0]}, {name:'James Logan', address:{street:'Somewear in the swamp', city:'Seminole', state:'Fl'},grades:[2.4,2.3,2.6]}];
         
-    
         
-    for (var i=0; i < stu.length; i++)
+    for (var i=0; i < stu.length; i++){
     console.log("Name: "+stu[i].name, "\nAddress: "  + stu[i].address.street, "\nCity: "+stu[i].address.city, "\nState: "+stu[i].address.state, "\nGPA: "+stu[i].grades);
-
+    };
         start.onclick = function(e) { 
         e.preventDefault();
         if(stu.length<3){
         addStu();
         
-                //console.log("Name: "+stu[i].name, + "\nAddress: "+stu[i].address.street, "\nCity: "+stu[i].address.city, "\n State: "+stu[i].address.state, +"\n GPA: "+stu[i].grades);
+                console.log("Name: "+stu[i].name, "\nAddress: "  + stu[i].address.street, "\nCity: "+stu[i].address.city, "\nState: "+stu[i].address.state, "\nGPA: "+stu[i].grades);
         stu.push(addStu);
             
-        }else{ console.log("Sorry but we are all out of students to display, Try again some other time.") }    
+        }else{ document.querySelector("#info_btn a").innerHTML="Done!!!";
+            console.log("Sorry but we are all out of students to display, Try again some other time.") }    
     }
     
   var addStu =  function(name, address, grades){
